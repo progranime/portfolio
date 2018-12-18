@@ -1,0 +1,17 @@
+.spinner {
+    &--xs {
+        width: 25px;
+    }
+    &--sm {
+        width: 50px;
+    }
+    &--md {
+        width: 75px;
+    }
+    &--lg {
+        width: 100px;
+    }
+    &--xl {
+        width: 150px;
+    }
+}

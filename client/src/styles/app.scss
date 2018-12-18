@@ -1,0 +1,11 @@
+// import materialize scss
+@import './node_modules/materialize-css/sass/materialize.scss';
+
+// import global component
+@import './global/variable';
+
+// import own component
+@import './components/banner';
+@import './components/container';
+@import './components/navbar';
+@import './components/spinner';
