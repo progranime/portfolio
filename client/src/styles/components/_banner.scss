@@ -1,0 +1,50 @@
+.banner {
+    position: relative;
+
+    &--fullscreen {
+        width: 100%;
+
+        .banner__image-holder {
+            height: 100vh;
+        }
+    }
+
+    &__container {
+    }
+
+    &__image-holder {
+        background-size: cover;
+    }
+
+    &__overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    &__details {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        color: #fff;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        padding: $spacing * 2;
+
+        .title,
+        .description {
+            margin: 0;
+        }
+
+        .title {
+            font-size: 38px;
+        }
+
+        .description {
+            font-size: 20px;
+        }
+    }
+}

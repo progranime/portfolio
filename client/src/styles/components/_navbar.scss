@@ -52,9 +52,11 @@
 
     &__list {
         margin: ($spacing * 2) 0;
-        li {
+        &-item {
             padding: ($spacing - 5px);
             cursor: pointer;
+            display: block;
+            color: #fff;
 
             &:hover,
             &.active {
@@ -67,15 +69,6 @@
                 @media #{$medium-and-up} {
                     display: inline;
                     margin-right: $spacing;
-                }
-            }
-
-            a {
-                color: #fff;
-                display: none;
-
-                @media #{$medium-and-up} {
-                    display: inline;
                 }
             }
         }

@@ -5,11 +5,6 @@ const Index = () => {
     return (
         <div className="navbar">
             <div className="navbar__container">
-                {/* <div className="navbar__menu">
-                    <span />
-                    <span />
-                    <span />
-                </div> */}
                 <div className="navbar__profile">
                     <div className="navbar__image-holder">
                         <img
@@ -24,32 +19,28 @@ const Index = () => {
                         <p className="subtitle">Web Developer</p>
                     </div>
                 </div>
-                <ul className="navbar__list">
-                    <li>
+                <div className="navbar__list">
+                    <NavLink exact to="/" className="navbar__list-item">
                         <i className="tiny material-icons">home</i>
-                        <NavLink exact to="/">
-                            Home
-                        </NavLink>
-                    </li>
-                    <li>
+                        Home
+                    </NavLink>
+                    <NavLink
+                        exact
+                        to="/portfolio"
+                        className="navbar__list-item"
+                    >
                         <i className="tiny material-icons">collections</i>
-                        <NavLink exact to="/portfolio">
-                            Portfolio
-                        </NavLink>
-                    </li>
-                    <li>
+                        Portfolio
+                    </NavLink>
+                    <NavLink exact to="/resume" className="navbar__list-item">
                         <i className="tiny material-icons">assessment</i>
-                        <NavLink exact to="/resume">
-                            Resume
-                        </NavLink>
-                    </li>
-                    <li>
+                        Resume
+                    </NavLink>
+                    <NavLink exact to="/contact" className="navbar__list-item">
                         <i className="tiny material-icons">contacts</i>
-                        <NavLink exact to="/contact">
-                            Contact
-                        </NavLink>
-                    </li>
-                </ul>
+                        Contact
+                    </NavLink>
+                </div>
             </div>
         </div>
     )

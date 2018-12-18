@@ -3,9 +3,11 @@
 
 // import global component
 @import './global/variable';
+@import './global/utility';
 
 // import own component
 @import './components/banner';
+@import './components/button';
 @import './components/container';
 @import './components/navbar';
 @import './components/spinner';

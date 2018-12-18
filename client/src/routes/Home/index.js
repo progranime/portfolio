@@ -6,7 +6,6 @@ class Index extends Component {
     render() {
         return (
             <div className="main-container">
-                <p>HomePage</p>
                 <Banner />
             </div>
         )
