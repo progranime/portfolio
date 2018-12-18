@@ -13,7 +13,28 @@
     &__container {
     }
 
+    &__detail {
+        .title,
+        .description {
+            margin: 0;
+        }
+
+        .title {
+            font-size: 24px;
+            font-weight: 500;
+        }
+
+        .description {
+            font-size: 18px;
+            font-weight: 400;
+        }
+    }
+
     &__list {
+        padding-left: inherit !important;
+        li {
+            list-style-type: disc !important;
+        }
     }
 
     &__badge {

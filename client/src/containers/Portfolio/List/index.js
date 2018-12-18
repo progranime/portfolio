@@ -1,18 +1,17 @@
 import React, { Component } from 'react'
 
-import { CardPortfolioList, CardPortfolioListWapper } from '../../../components'
+import { CardPortfolio, CardPortfolioWrapper } from '../../../components'
 
 class Index extends Component {
     render() {
         return (
             <div>
-                Portfolio list
-                <CardPortfolioListWapper>
-                    <CardPortfolioList />
-                    <CardPortfolioList />
-                    <CardPortfolioList />
-                    <CardPortfolioList />
-                </CardPortfolioListWapper>
+                <CardPortfolioWrapper>
+                    <CardPortfolio />
+                    <CardPortfolio />
+                    <CardPortfolio />
+                    <CardPortfolio />
+                </CardPortfolioWrapper>
             </div>
         )
     }

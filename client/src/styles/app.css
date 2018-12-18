@@ -6741,6 +6741,19 @@ input[type=range]::-ms-thumb {
   margin-bottom: 0; }
   .card-portfolio__wrapper .card-portfolio:not(:last-child) {
     border-bottom: 1px solid #ccc; }
+  .card-portfolio__detail .title,
+  .card-portfolio__detail .description {
+    margin: 0; }
+  .card-portfolio__detail .title {
+    font-size: 24px;
+    font-weight: 500; }
+  .card-portfolio__detail .description {
+    font-size: 18px;
+    font-weight: 400; }
+  .card-portfolio__list {
+    padding-left: inherit !important; }
+    .card-portfolio__list li {
+      list-style-type: disc !important; }
   .card-portfolio__badge li {
     display: inline-block;
     margin-right: 5px; }
@@ -6754,10 +6767,13 @@ input[type=range]::-ms-thumb {
       content: '' !important; }
 
 .main-container {
-  margin-left: 100px; }
+  margin-left: 100px;
+  padding: 15px; }
   @media only screen and (min-width: 601px) {
     .main-container {
       margin-left: 200px; } }
+  .main-container--fluid {
+    padding: 0; }
 
 .navbar {
   position: fixed;

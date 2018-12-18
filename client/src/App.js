@@ -8,8 +8,15 @@ import './styles/app.css'
 import { Spinner, Navbar } from './components'
 
 // routes
+/* import Home from './routes/Home'
+import Portfolio from './routes/Portfolio'
+import PortfolioView from './routes/Portfolio/View'
+import Resume from './routes/Resume'
+import Contact from './routes/Contact' */
+
 const Home = lazy(() => import('./routes/Home'))
 const Portfolio = lazy(() => import('./routes/Portfolio'))
+const PortfolioView = lazy(() => import('./routes/Portfolio/View'))
 const Resume = lazy(() => import('./routes/Resume'))
 const Contact = lazy(() => import('./routes/Contact'))
 
@@ -22,14 +29,34 @@ class App extends Component {
                         <Suspense fallback={<Spinner />}>
                             <Navbar />
 
-                            <Route exact path="/" component={Home} />
+                            <Route
+                                exact
+                                path="/"
+                                component={props => <Home {...props} />}
+                            />
                             <Route
                                 exact
                                 path="/portfolio"
-                                component={Portfolio}
+                                component={props => <Portfolio {...props} />}
                             />
-                            <Route exact path="/resume" component={Resume} />
-                            <Route exact path="/contact" component={Contact} />
+
+                            <Route
+                                exact
+                                path="/portfolio/:id/view"
+                                component={props => (
+                                    <PortfolioView {...props} />
+                                )}
+                            />
+                            <Route
+                                exact
+                                path="/resume"
+                                component={props => <Resume {...props} />}
+                            />
+                            <Route
+                                exact
+                                path="/contact"
+                                component={props => <Contact {...props} />}
+                            />
                         </Suspense>
                     </Switch>
                 </Router>

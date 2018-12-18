@@ -1,7 +1,12 @@
 .main-container {
     margin-left: 100px;
+    padding: $spacing;
 
     @media #{$medium-and-up} {
         margin-left: 200px;
+    }
+
+    &--fluid {
+        padding: 0;
     }
 }
