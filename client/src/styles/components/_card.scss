@@ -1,0 +1,41 @@
+.card-portfolio {
+    padding: $spacing 0;
+    margin-bottom: 0;
+
+    &__wrapper {
+        .card-portfolio {
+            &:not(:last-child) {
+                border-bottom: 1px solid #ccc;
+            }
+        }
+    }
+
+    &__container {
+    }
+
+    &__list {
+    }
+
+    &__badge {
+        li {
+            display: inline-block;
+            margin-right: ($spacing / 3);
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+        .badge {
+            float: none;
+            padding: ($spacing / 3);
+            margin-left: 0;
+
+            &:after {
+                content: '' !important;
+            }
+        }
+    }
+
+    &__image-holder {
+    }
+}

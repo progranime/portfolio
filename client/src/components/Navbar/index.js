@@ -10,7 +10,7 @@ const Index = () => {
                         <img
                             src={`${
                                 window.location.origin
-                            }/images/assets/dp.png`}
+                            }/images/assets/dp.jpg`}
                             alt=""
                         />
                     </div>

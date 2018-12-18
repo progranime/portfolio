@@ -29,7 +29,7 @@ const Index = ({ size }) => {
                         in PHP and NodeJS.
                     </p>
 
-                    <div className="center-align my-5">
+                    <div className="my-5">
                         <Link
                             to="/portfolio"
                             className="btn waves-effect waves-light"

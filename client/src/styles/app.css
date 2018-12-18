@@ -6736,6 +6736,23 @@ input[type=range]::-ms-thumb {
     .banner__details .description {
       font-size: 20px; }
 
+.card-portfolio {
+  padding: 15px 0;
+  margin-bottom: 0; }
+  .card-portfolio__wrapper .card-portfolio:not(:last-child) {
+    border-bottom: 1px solid #ccc; }
+  .card-portfolio__badge li {
+    display: inline-block;
+    margin-right: 5px; }
+    .card-portfolio__badge li:last-child {
+      margin-right: 0; }
+  .card-portfolio__badge .badge {
+    float: none;
+    padding: 5px;
+    margin-left: 0; }
+    .card-portfolio__badge .badge:after {
+      content: '' !important; }
+
 .main-container {
   margin-left: 100px; }
   @media only screen and (min-width: 601px) {
