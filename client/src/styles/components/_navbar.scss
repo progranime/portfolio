@@ -66,9 +66,20 @@
             .material-icons {
                 display: block;
                 text-align: center;
+                font-size: 22px;
+
                 @media #{$medium-and-up} {
                     display: inline;
                     margin-right: $spacing;
+                    font-size: 14px;
+                }
+            }
+
+            .title {
+                display: none;
+
+                @media #{$medium-and-up} {
+                    display: inline;
                 }
             }
         }

@@ -6785,11 +6785,18 @@ input[type=range]::-ms-thumb {
         background-color: #3b4f6a; }
       .navbar__list-item .material-icons {
         display: block;
-        text-align: center; }
+        text-align: center;
+        font-size: 22px; }
         @media only screen and (min-width: 601px) {
           .navbar__list-item .material-icons {
             display: inline;
-            margin-right: 15px; } }
+            margin-right: 15px;
+            font-size: 14px; } }
+      .navbar__list-item .title {
+        display: none; }
+        @media only screen and (min-width: 601px) {
+          .navbar__list-item .title {
+            display: inline; } }
 
 .spinner--xs {
   width: 25px; }

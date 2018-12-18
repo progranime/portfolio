@@ -22,7 +22,7 @@ const Index = () => {
                 <div className="navbar__list">
                     <NavLink exact to="/" className="navbar__list-item">
                         <i className="tiny material-icons">home</i>
-                        Home
+                        <span className="title">Home</span>
                     </NavLink>
                     <NavLink
                         exact
@@ -30,15 +30,15 @@ const Index = () => {
                         className="navbar__list-item"
                     >
                         <i className="tiny material-icons">collections</i>
-                        Portfolio
+                        <span className="title">Portfolio</span>
                     </NavLink>
                     <NavLink exact to="/resume" className="navbar__list-item">
                         <i className="tiny material-icons">assessment</i>
-                        Resume
+                        <span className="title">Resume</span>
                     </NavLink>
                     <NavLink exact to="/contact" className="navbar__list-item">
                         <i className="tiny material-icons">contacts</i>
-                        Contact
+                        <span className="title">Contact</span>
                     </NavLink>
                 </div>
             </div>
