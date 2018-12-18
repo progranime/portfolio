@@ -55,7 +55,7 @@ const Index = () => {
                                 <p>
                                     2012-2016 <br />
                                     BS Computer Science, Technological Institute
-                                    of the Philippines (TIP), Quezon Cit
+                                    of the Philippines (TIP), Quezon City
                                 </p>
                             </li>
                         </ul>
