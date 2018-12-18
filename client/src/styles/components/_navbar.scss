@@ -6,6 +6,7 @@
     color: #fff;
     overflow-y: auto;
     top: 0;
+    transition: all 0.3s ease-in-out;
 
     @media #{$medium-and-up} {
         width: 200px;
@@ -82,6 +83,32 @@
                     display: inline;
                 }
             }
+        }
+    }
+
+    &__social {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #3b4f6a;
+        padding: 10px 0px;
+        margin: 0;
+
+        li {
+            display: inline;
+
+            &:first-child {
+                margin-left: 10px;
+            }
+
+            &:not(:last-child) {
+                margin-right: 10px;
+            }
+        }
+        svg {
+            color: #fff;
+            font-size: 16px;
         }
     }
 }

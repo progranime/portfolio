@@ -6782,7 +6782,8 @@ input[type=range]::-ms-thumb {
   height: 100vh;
   color: #fff;
   overflow-y: auto;
-  top: 0; }
+  top: 0;
+  transition: all 0.3s ease-in-out; }
   @media only screen and (min-width: 601px) {
     .navbar {
       width: 200px; } }
@@ -6830,6 +6831,23 @@ input[type=range]::-ms-thumb {
         @media only screen and (min-width: 601px) {
           .navbar__list-item .title {
             display: inline; } }
+  .navbar__social {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #3b4f6a;
+    padding: 10px 0px;
+    margin: 0; }
+    .navbar__social li {
+      display: inline; }
+      .navbar__social li:first-child {
+        margin-left: 10px; }
+      .navbar__social li:not(:last-child) {
+        margin-right: 10px; }
+    .navbar__social svg {
+      color: #fff;
+      font-size: 16px; }
 
 .spinner--xs {
   width: 25px; }
