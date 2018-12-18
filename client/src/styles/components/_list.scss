@@ -1,0 +1,8 @@
+.list {
+    &--style {
+        li {
+            list-style-type: disc !important;
+            margin-left: $spacing;
+        }
+    }
+}

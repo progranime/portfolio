@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
-import Resume from '../../containers/Resume'
+
+import { Resume } from '../../components'
 
 class Index extends Component {
     render() {
         return (
-            <div className="main-container">
+            <div>
                 <Resume />
             </div>
         )

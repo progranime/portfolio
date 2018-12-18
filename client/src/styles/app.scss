@@ -4,11 +4,14 @@
 // import global component
 @import './global/variable';
 @import './global/utility';
+@import './global/sanitize';
 
 // import own component
 @import './components/banner';
 @import './components/button';
 @import './components/card';
 @import './components/container';
+@import './components/list';
 @import './components/navbar';
+@import './components/resume';
 @import './components/spinner';

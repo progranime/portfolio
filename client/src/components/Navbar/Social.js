@@ -8,12 +8,17 @@ const Social = () => {
                 <a
                     href="https://www.linkedin.com/in/jeremy-espinosa-213236119/"
                     target="_blank"
+                    rel="noopener noreferrer"
                 >
                     <FaLinkedin />
                 </a>
             </li>
             <li>
-                <a href="https://github.com/progranime" target="_blank">
+                <a
+                    href="https://github.com/progranime"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
                     <FaGithub />
                 </a>
             </li>
