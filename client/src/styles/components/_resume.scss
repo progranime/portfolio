@@ -3,4 +3,8 @@
     padding: 15px;
     border-radius: 15px;
     box-shadow: 3px 5px 3px #f1f1f1;
+
+    @media #{$medium-and-up} {
+        margin: $spacing * 2;
+    }
 }
