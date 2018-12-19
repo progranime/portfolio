@@ -6778,7 +6778,9 @@ textarea.materialize-textarea {
   .card-portfolio__image-holder {
     background-size: cover;
     height: 250px;
-    background-position: center; }
+    background-position: top center; }
+    .card-portfolio__image-holder--fullview {
+      height: 100vh; }
 
 .main-container {
   margin-left: 100px;

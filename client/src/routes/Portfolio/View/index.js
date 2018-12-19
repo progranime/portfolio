@@ -5,7 +5,7 @@ class Index extends Component {
     render() {
         return (
             <div className="main-container">
-                <PortfolioView />
+                <PortfolioView match={this.props.match} />
             </div>
         )
     }

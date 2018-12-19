@@ -61,6 +61,10 @@
     &__image-holder {
         background-size: cover;
         height: 250px;
-        background-position: center;
+        background-position: top center;
+
+        &--fullview {
+            height: 100vh;
+        }
     }
 }

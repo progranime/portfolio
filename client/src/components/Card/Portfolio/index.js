@@ -13,6 +13,7 @@ const Index = ({
     title,
     description,
     technology,
+    gallery,
     showGallery,
     showSeeMore
 }) => {
@@ -41,9 +42,7 @@ const Index = ({
                 <CardPortfolioContainer classes="col s12 m6">
                     <Link to={`/portfolio/${id}/view`}>
                         <CardPortfolioImageHolder
-                            url={`${
-                                window.location.origin
-                            }/images/assets/workplace.jpg`}
+                            url={`${window.location.origin}${gallery[0]}`}
                         />
                     </Link>
                 </CardPortfolioContainer>
@@ -52,16 +51,13 @@ const Index = ({
             {showGallery && (
                 <div className="card-portfolio">
                     <CardPortfolioContainer>
-                        <CardPortfolioImageHolder
-                            url={`${
-                                window.location.origin
-                            }/images/assets/workplace.jpg`}
-                        />
-                        <CardPortfolioImageHolder
-                            url={`${
-                                window.location.origin
-                            }/images/assets/workplace.jpg`}
-                        />
+                        {gallery.map((result, index) => (
+                            <CardPortfolioImageHolder
+                                key={index}
+                                url={`${window.location.origin}${result}`}
+                                classes="card-portfolio__image-holder--fullview"
+                            />
+                        ))}
                     </CardPortfolioContainer>
                 </div>
             )}

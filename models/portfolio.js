@@ -15,8 +15,8 @@ const PortfolioSchema = new Schema({
         type: String,
         required: true
     },
-    thumbnail: {
-        type: String,
+    gallery: {
+        type: Array,
         required: true
     },
     date_created: {

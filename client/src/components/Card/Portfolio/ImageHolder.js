@@ -1,10 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const ImageHolder = ({ url }) => {
+const ImageHolder = ({ url, classes }) => {
     return (
         <div
-            className="card-portfolio__image-holder"
+            className={`card-portfolio__image-holder ${classes}`}
             style={{ backgroundImage: `url(${url})` }}
         />
     )
@@ -15,7 +15,8 @@ ImageHolder.defaultProps = {
 }
 
 ImageHolder.propTypes = {
-    url: PropTypes.string
+    url: PropTypes.string,
+    classes: PropTypes.string
 }
 
 export default ImageHolder

@@ -6,10 +6,6 @@ import { CardPortfolio, Spinner } from '../../../components'
 import CardPortfolioWrapper from '../../../components/Card/Portfolio/Wrapper'
 
 class Index extends Component {
-    constructor(props) {
-        super(props)
-    }
-
     componentDidMount() {
         this.props.getPortfolios()
     }
@@ -25,6 +21,7 @@ class Index extends Component {
                     title={portfolio.title}
                     description={portfolio.description}
                     technology={portfolio.technology.split(',')}
+                    gallery={portfolio.gallery}
                 />
             )
         })
