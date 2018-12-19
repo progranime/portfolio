@@ -13,6 +13,7 @@ const Index = ({
     title,
     description,
     technology,
+    task,
     gallery,
     showGallery,
     showSeeMore
@@ -25,7 +26,7 @@ const Index = ({
                         title={title}
                         description={description}
                     />
-                    <CardPortfolioList />
+                    <CardPortfolioList task={task} />
 
                     {showSeeMore && (
                         <Link

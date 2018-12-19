@@ -1,14 +1,18 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
-const List = () => {
+const List = ({ task }) => {
     return (
         <ul className="card-portfolio__list">
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+            {task.map((result, index) => (
+                <li key={index}>{result}</li>
+            ))}
         </ul>
     )
+}
+
+List.propTypes = {
+    task: PropTypes.array.isRequired
 }
 
 export default List

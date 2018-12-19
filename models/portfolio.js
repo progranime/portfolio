@@ -19,6 +19,10 @@ const PortfolioSchema = new Schema({
         type: Array,
         required: true
     },
+    task: {
+        type: Array,
+        required: true
+    },
     date_created: {
         type: Date
     },
