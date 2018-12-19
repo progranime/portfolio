@@ -25,7 +25,6 @@ export const getPortfolio = payload => dispatch => {
     }
 
     axios(axiosOptions).then(res => {
-        console.log(res.data)
         dispatch({
             type: GET_PORTFOLIO,
             payload: {
