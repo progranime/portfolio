@@ -3,9 +3,10 @@ import PropTypes from 'prop-types'
 
 const ImageHolder = ({ url }) => {
     return (
-        <div className="card-portfolio__image-holder">
-            <img src={url} alt="" className="responsive-img" />
-        </div>
+        <div
+            className="card-portfolio__image-holder"
+            style={{ backgroundImage: `url(${url})` }}
+        />
     )
 }
 

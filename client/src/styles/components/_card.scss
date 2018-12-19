@@ -25,7 +25,7 @@
         }
 
         .description {
-            font-size: 18px;
+            font-size: 16px;
             font-weight: 400;
         }
     }
@@ -37,10 +37,11 @@
         }
     }
 
-    &__badge {
+    &__technology {
         li {
             display: inline-block;
             margin-right: ($spacing / 3);
+            margin-bottom: ($spacing / 3);
 
             &:last-child {
                 margin-right: 0;
@@ -58,5 +59,8 @@
     }
 
     &__image-holder {
+        background-size: cover;
+        height: 250px;
+        background-position: center;
     }
 }

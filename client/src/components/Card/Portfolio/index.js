@@ -5,31 +5,41 @@ import { Link } from 'react-router-dom'
 import CardPortfolioContainer from './Container'
 import CardPortfolioDetail from './Detail'
 import CardPortfolioList from './List'
-import CardPortfolioBadge from './Badge'
+import CardPortfolioTechnology from './Technology'
 import CardPortfolioImageHolder from './ImageHolder'
 
-const Index = ({ showGallery, showSeeMore }) => {
+const Index = ({
+    id,
+    title,
+    description,
+    technology,
+    showGallery,
+    showSeeMore
+}) => {
     return (
         <Fragment>
             <div className="card-portfolio row">
                 <CardPortfolioContainer classes="col s12 m6">
-                    <CardPortfolioDetail />
+                    <CardPortfolioDetail
+                        title={title}
+                        description={description}
+                    />
                     <CardPortfolioList />
 
                     {showSeeMore && (
                         <Link
-                            to={`/portfolio/1/view`}
-                            className="btn-small waves-effect waves-light"
+                            to={`/portfolio/${id}/view`}
+                            className="btn-small waves-effect waves-light mb-2"
                         >
                             See More
                         </Link>
                     )}
 
-                    <CardPortfolioBadge />
+                    <CardPortfolioTechnology technology={technology} />
                 </CardPortfolioContainer>
 
                 <CardPortfolioContainer classes="col s12 m6">
-                    <Link to={`/portfolio/1/view`}>
+                    <Link to={`/portfolio/${id}/view`}>
                         <CardPortfolioImageHolder
                             url={`${
                                 window.location.origin

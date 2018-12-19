@@ -6757,23 +6757,28 @@ textarea.materialize-textarea {
     font-size: 24px;
     font-weight: 500; }
   .card-portfolio__detail .description {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400; }
   .card-portfolio__list {
     padding-left: inherit !important; }
     .card-portfolio__list li {
       list-style-type: disc !important; }
-  .card-portfolio__badge li {
+  .card-portfolio__technology li {
     display: inline-block;
-    margin-right: 5px; }
-    .card-portfolio__badge li:last-child {
+    margin-right: 5px;
+    margin-bottom: 5px; }
+    .card-portfolio__technology li:last-child {
       margin-right: 0; }
-  .card-portfolio__badge .badge {
+  .card-portfolio__technology .badge {
     float: none;
     padding: 5px;
     margin-left: 0; }
-    .card-portfolio__badge .badge:after {
+    .card-portfolio__technology .badge:after {
       content: '' !important; }
+  .card-portfolio__image-holder {
+    background-size: cover;
+    height: 250px;
+    background-position: center; }
 
 .main-container {
   margin-left: 100px;
