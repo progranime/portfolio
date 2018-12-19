@@ -1,5 +1,8 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
+import { connect } from 'react-redux'
 
+import { sendEmail } from '../../actions/mailActions'
 import { Form, FormInput, FormTextarea } from '../../components'
 
 class Index extends Component {
@@ -21,7 +24,12 @@ class Index extends Component {
 
     handleSubmit = e => {
         e.preventDefault()
-        console.log(this.state)
+
+        this.props.sendEmail({
+            name: this.state.name,
+            email: this.state.email,
+            message: this.state.message
+        })
     }
 
     render() {
@@ -31,12 +39,17 @@ class Index extends Component {
                     <h4>Contact Form</h4>
                     <p className="pb-5">
                         Let me know your concern here. <br /> I'm also accepting
-                        freelance project in <strong>Web Development</strong>.{' '}
+                        freelance project in <strong>Web Development</strong>.
                         <br />
                         Please drop your email here.
                     </p>
 
                     <Form onSubmit={this.handleSubmit}>
+                        {this.props.mail.hasSent && (
+                            <h6 className="red-text">
+                                Your Message has bent sent!
+                            </h6>
+                        )}
                         <FormInput
                             label="Name"
                             id="name"
@@ -80,4 +93,20 @@ class Index extends Component {
     }
 }
 
-export default Index
+Index.propTypes = {
+    mail: PropTypes.object.isRequired,
+    sendEmail: PropTypes.func.isRequired
+}
+
+const mapStateToProps = state => ({
+    mail: state.mail
+})
+
+const mapDispatchToProps = {
+    sendEmail
+}
+
+export default connect(
+    mapStateToProps,
+    mapDispatchToProps
+)(Index)

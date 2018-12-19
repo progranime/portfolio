@@ -5,7 +5,7 @@ const initialState = {
     result: {}
 }
 
-export default function(state = initialState, { type, payload }) {
+const portfolioReducer = (state = initialState, { type, payload }) => {
     switch (type) {
         case GET_PORTFOLIOS:
             return {
@@ -21,3 +21,5 @@ export default function(state = initialState, { type, payload }) {
             return state
     }
 }
+
+export default portfolioReducer

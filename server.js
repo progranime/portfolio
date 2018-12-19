@@ -4,6 +4,7 @@ const bodyParser = require('body-parser')
 const app = express()
 
 const portfolio = require('./routes/api/portfolio')
+const mail = require('./routes/api/mail')
 
 // DB Config
 const db = require('./config/keys').mongoURI
@@ -23,6 +24,7 @@ app.use(bodyParser.json())
 
 // routes
 app.use('/api/portfolio', portfolio)
+app.use('/api/mail', mail)
 
 // server port
 const port = process.env.PORT || 5000
