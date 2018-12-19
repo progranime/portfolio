@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 
-import { CardPortfolio, CardPortfolioWrapper } from '../../../components'
+import { CardPortfolio } from '../../../components'
+import CardPortfolioWrapper from '../../../components/Card/Portfolio/Wrapper'
 
 class Index extends Component {
     render() {

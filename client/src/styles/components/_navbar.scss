@@ -1,6 +1,6 @@
 .navbar {
     position: fixed;
-    background-color: #24344b;
+    background-color: $navbar-primary;
     width: 100px;
     height: 100vh;
     color: #fff;
@@ -36,7 +36,7 @@
         img {
             width: 60px;
             border-radius: 50%;
-            border: 3px solid #3b4f6a;
+            border: 3px solid $navbar-secondary;
 
             @media #{$medium-and-up} {
                 width: 100px;
@@ -48,6 +48,10 @@
         .title,
         .subtitle {
             margin: 0;
+        }
+
+        .subtitle {
+            color: #ccc;
         }
     }
 
@@ -61,7 +65,7 @@
 
             &:hover,
             &.active {
-                background-color: #3b4f6a;
+                background-color: $navbar-secondary;
             }
 
             .material-icons {
@@ -91,7 +95,7 @@
         bottom: 0;
         left: 0;
         width: 100%;
-        background-color: #3b4f6a;
+        background-color: $navbar-secondary;
         padding: 10px 0px;
         margin: 0;
 
