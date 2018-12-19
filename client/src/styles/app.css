@@ -6842,21 +6842,22 @@ textarea.materialize-textarea {
     @media only screen and (min-width: 601px) {
       .navbar__image-holder img {
         width: 100px; } }
-  .navbar__details .title,
-  .navbar__details .subtitle {
+  .navbar__detail .title,
+  .navbar__detail .subtitle {
     margin: 0; }
-  .navbar__details .subtitle {
-    color: #ccc; }
+  .navbar__detail .subtitle {
+    color: #ccc;
+    font-size: 12px; }
   .navbar__list {
     margin: 30px 0; }
     .navbar__list-item {
-      padding: 15px 0;
+      padding: 10px 0;
       cursor: pointer;
       display: block;
       color: #fff; }
       @media only screen and (min-width: 601px) {
         .navbar__list-item {
-          padding: 15px; } }
+          padding: 10px 15px; } }
       .navbar__list-item:hover, .navbar__list-item.active {
         background-color: #26a69a; }
       .navbar__list-item .material-icons {
@@ -6872,7 +6873,8 @@ textarea.materialize-textarea {
         display: none; }
         @media only screen and (min-width: 601px) {
           .navbar__list-item .title {
-            display: inline; } }
+            display: inline;
+            font-size: 14px; } }
   .navbar__social {
     position: absolute;
     bottom: 0;
@@ -6914,3 +6916,6 @@ textarea.materialize-textarea {
 
 .spinner--xl {
   width: 150px; }
+
+* {
+  font-family: 'Titillium Web', sans-serif; }

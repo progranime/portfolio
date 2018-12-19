@@ -48,7 +48,7 @@
         }
     }
 
-    &__details {
+    &__detail {
         .title,
         .subtitle {
             margin: 0;
@@ -56,19 +56,20 @@
 
         .subtitle {
             color: #ccc;
+            font-size: 12px;
         }
     }
 
     &__list {
         margin: ($spacing * 2) 0;
         &-item {
-            padding: $spacing 0;
+            padding: ($spacing - 5px) 0;
             cursor: pointer;
             display: block;
             color: #fff;
 
             @media #{$medium-and-up} {
-                padding: $spacing;
+                padding: 10px 15px;
             }
 
             &:hover,
@@ -93,6 +94,7 @@
 
                 @media #{$medium-and-up} {
                     display: inline;
+                    font-size: 14px;
                 }
             }
         }

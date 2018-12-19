@@ -64,12 +64,15 @@ class Index extends Component {
                             value={this.state.message}
                             onChange={this.handleChange}
                         />
-                        <button
-                            className="btn waves-effect waves-light"
-                            type="submit"
-                        >
-                            Send
-                        </button>
+                        <div className="right-align">
+                            <button
+                                className="btn waves-effect waves-light"
+                                type="submit"
+                            >
+                                Send
+                                <i className="material-icons right">send</i>
+                            </button>
+                        </div>
                     </Form>
                 </div>
             </div>
