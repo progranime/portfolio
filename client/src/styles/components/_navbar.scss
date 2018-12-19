@@ -1,7 +1,7 @@
 .navbar {
     position: fixed;
     background-color: $navbar-primary;
-    width: 100px;
+    width: 70px;
     height: 100vh;
     color: #fff;
     overflow-y: auto;
@@ -29,12 +29,16 @@
 
     &__profile {
         text-align: center;
-        padding: $spacing;
+        padding: $spacing 0;
+
+        @media #{$medium-and-up} {
+            padding: $spacing;
+        }
     }
 
     &__image-holder {
         img {
-            width: 60px;
+            width: 50px;
             border-radius: 50%;
             border: 3px solid $navbar-secondary;
 
@@ -58,10 +62,14 @@
     &__list {
         margin: ($spacing * 2) 0;
         &-item {
-            padding: ($spacing - 5px);
+            padding: $spacing 0;
             cursor: pointer;
             display: block;
             color: #fff;
+
+            @media #{$medium-and-up} {
+                padding: $spacing;
+            }
 
             &:hover,
             &.active {

@@ -11,6 +11,10 @@ const PortfolioSchema = new Schema({
         type: String,
         required: true
     },
+    position: {
+        type: String,
+        require: true
+    },
     technology: {
         type: String,
         required: true

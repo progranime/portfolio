@@ -20,6 +20,7 @@ class Index extends Component {
                     id={portfolio._id}
                     title={portfolio.title}
                     description={portfolio.description}
+                    position={portfolio.position}
                     task={portfolio.task}
                     technology={portfolio.technology.split(',')}
                     gallery={portfolio.gallery}

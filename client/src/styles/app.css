@@ -6751,10 +6751,15 @@ textarea.materialize-textarea {
   .card-portfolio__wrapper .card-portfolio:not(:last-child) {
     border-bottom: 1px solid #ccc; }
   .card-portfolio__detail .title,
+  .card-portfolio__detail .position,
   .card-portfolio__detail .description {
     margin: 0; }
   .card-portfolio__detail .title {
     font-size: 24px;
+    font-weight: 500; }
+  .card-portfolio__detail .position {
+    color: #ccc;
+    font-style: italic;
     font-weight: 500; }
   .card-portfolio__detail .description {
     font-size: 16px;
@@ -6766,7 +6771,7 @@ textarea.materialize-textarea {
   .card-portfolio__technology li {
     display: inline-block;
     margin-right: 5px;
-    margin-bottom: 5px; }
+    margin-bottom: 10px; }
     .card-portfolio__technology li:last-child {
       margin-right: 0; }
   .card-portfolio__technology .badge {
@@ -6776,14 +6781,22 @@ textarea.materialize-textarea {
     .card-portfolio__technology .badge:after {
       content: '' !important; }
   .card-portfolio__image-holder {
-    background-size: cover;
-    height: 250px;
-    background-position: top center; }
+    margin-bottom: 15px; }
     .card-portfolio__image-holder--fullview {
-      height: 100vh; }
+      margin: 2px;
+      display: inline-block;
+      width: 100%; }
+      @media only screen and (min-width: 601px) {
+        .card-portfolio__image-holder--fullview {
+          width: calc(50% - 4px); } }
+      @media only screen and (min-width: 993px) {
+        .card-portfolio__image-holder--fullview {
+          width: calc(33.33% - 6px); } }
+    .card-portfolio__image-holder img {
+      box-shadow: 3px 5px 3px #ddd; }
 
 .main-container {
-  margin-left: 100px;
+  margin-left: 70px;
   padding: 5px; }
   @media only screen and (min-width: 601px) {
     .main-container {
@@ -6799,7 +6812,7 @@ textarea.materialize-textarea {
 .navbar {
   position: fixed;
   background-color: #364150;
-  width: 100px;
+  width: 70px;
   height: 100vh;
   color: #fff;
   overflow-y: auto;
@@ -6818,9 +6831,12 @@ textarea.materialize-textarea {
       width: 30px; }
   .navbar__profile {
     text-align: center;
-    padding: 15px; }
+    padding: 15px 0; }
+    @media only screen and (min-width: 601px) {
+      .navbar__profile {
+        padding: 15px; } }
   .navbar__image-holder img {
-    width: 60px;
+    width: 50px;
     border-radius: 50%;
     border: 3px solid #26a69a; }
     @media only screen and (min-width: 601px) {
@@ -6834,10 +6850,13 @@ textarea.materialize-textarea {
   .navbar__list {
     margin: 30px 0; }
     .navbar__list-item {
-      padding: 10px;
+      padding: 15px 0;
       cursor: pointer;
       display: block;
       color: #fff; }
+      @media only screen and (min-width: 601px) {
+        .navbar__list-item {
+          padding: 15px; } }
       .navbar__list-item:hover, .navbar__list-item.active {
         background-color: #26a69a; }
       .navbar__list-item .material-icons {

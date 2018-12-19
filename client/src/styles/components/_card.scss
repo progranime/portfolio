@@ -15,12 +15,19 @@
 
     &__detail {
         .title,
+        .position,
         .description {
             margin: 0;
         }
 
         .title {
             font-size: 24px;
+            font-weight: 500;
+        }
+
+        .position {
+            color: #ccc;
+            font-style: italic;
             font-weight: 500;
         }
 
@@ -41,7 +48,7 @@
         li {
             display: inline-block;
             margin-right: ($spacing / 3);
-            margin-bottom: ($spacing / 3);
+            margin-bottom: ($spacing - 5px);
 
             &:last-child {
                 margin-right: 0;
@@ -59,12 +66,24 @@
     }
 
     &__image-holder {
-        background-size: cover;
-        height: 250px;
-        background-position: top center;
+        margin-bottom: $spacing;
 
         &--fullview {
-            height: 100vh;
+            margin: 2px;
+            display: inline-block;
+            width: 100%;
+
+            @media #{$medium-and-up} {
+                width: calc(50% - 4px);
+            }
+
+            @media #{$large-and-up} {
+                width: calc(33.33% - 6px);
+            }
+        }
+
+        img {
+            box-shadow: 3px 5px 3px #ddd;
         }
     }
 }

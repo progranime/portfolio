@@ -12,6 +12,7 @@ const Index = ({
     id,
     title,
     description,
+    position,
     technology,
     task,
     gallery,
@@ -25,6 +26,7 @@ const Index = ({
                     <CardPortfolioDetail
                         title={title}
                         description={description}
+                        position={position}
                     />
                     <CardPortfolioList task={task} />
 
