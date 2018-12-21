@@ -1,9 +1,10 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
 import PropTypes from 'prop-types'
+import classnames from 'classnames'
 import { connect } from 'react-redux'
 
 import { sendEmail } from '../../actions/mailActions'
-import { Form, FormInput, FormTextarea } from '../../components'
+import { Form, FormInput, FormTextarea, Spinner } from '../../components'
 
 class Index extends Component {
     constructor(props) {
@@ -12,7 +13,8 @@ class Index extends Component {
         this.state = {
             name: '',
             email: '',
-            message: ''
+            message: '',
+            mailLoading: false
         }
     }
 
@@ -30,6 +32,23 @@ class Index extends Component {
             email: this.state.email,
             message: this.state.message
         })
+
+        this.setState({
+            mailLoading: true
+        })
+    }
+
+    static getDerivedStateFromProps(props, state) {
+        if (props.mail.hasSent) {
+            return {
+                mailLoading: !props.mail.hasSent,
+                name: '',
+                email: '',
+                message: ''
+            }
+        }
+
+        return null
     }
 
     render() {
@@ -79,11 +98,24 @@ class Index extends Component {
                         />
                         <div className="right-align">
                             <button
-                                className="btn waves-effect waves-light"
+                                className={classnames(
+                                    'btn waves-effect waves-light',
+                                    {
+                                        disabled: this.state.mailLoading
+                                    }
+                                )}
                                 type="submit"
                             >
                                 Send
-                                <i className="material-icons right">send</i>
+                                {!this.state.mailLoading ? (
+                                    <Fragment>
+                                        <i className="material-icons right">
+                                            send
+                                        </i>
+                                    </Fragment>
+                                ) : (
+                                    <Spinner classes="d-inline-block px-1" />
+                                )}
                             </button>
                         </div>
                     </Form>

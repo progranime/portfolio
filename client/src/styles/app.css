@@ -6705,6 +6705,9 @@ input[type=range]::-ms-thumb {
 .my-5 {
   margin: 25px 0; }
 
+.d-inline-block {
+  display: inline-block !important; }
+
 p {
   margin: 0; }
 
@@ -6916,20 +6919,21 @@ textarea.materialize-textarea {
     .resume {
       margin: 0 30px; } }
 
-.spinner--xs {
-  width: 25px; }
-
-.spinner--sm {
-  width: 50px; }
-
-.spinner--md {
-  width: 75px; }
-
-.spinner--lg {
-  width: 100px; }
-
-.spinner--xl {
-  width: 150px; }
+.spinner {
+  display: block;
+  text-align: center; }
+  .spinner--xs {
+    width: 25px; }
+  .spinner--sm {
+    width: 50px; }
+  .spinner--md {
+    width: 75px; }
+  .spinner--lg {
+    width: 100px; }
+  .spinner--xl {
+    width: 150px; }
+  .spinner img {
+    vertical-align: middle; }
 
 * {
   font-family: 'Titillium Web', sans-serif; }

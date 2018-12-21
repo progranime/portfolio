@@ -1,4 +1,7 @@
 .spinner {
+    display: block;
+    text-align: center;
+
     &--xs {
         width: 25px;
     }
@@ -13,5 +16,9 @@
     }
     &--xl {
         width: 150px;
+    }
+
+    img {
+        vertical-align: middle;
     }
 }

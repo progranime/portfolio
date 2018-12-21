@@ -2,13 +2,13 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import classnames from 'classnames'
 
-const Index = ({ size, text }) => {
+const Index = ({ size, text, classes }) => {
     return (
-        <div className="center-align">
+        <div className={`spinner ${classes}`}>
             <img
                 src={`${window.location.origin}/images/icons/spinner.gif`}
                 alt=""
-                className={classnames('spinner', {
+                className={classnames('', {
                     'spinner--xs': size === 'xs',
                     'spinner--sm': size === 'sm',
                     'spinner--md': size === 'md',
@@ -23,12 +23,14 @@ const Index = ({ size, text }) => {
 
 Index.propTypes = {
     size: PropTypes.string,
-    text: PropTypes.string
+    text: PropTypes.string,
+    classes: PropTypes.string
 }
 
 Index.defaultProps = {
     size: 'xs',
-    text: ''
+    text: '',
+    classes: ''
 }
 
 export default Index

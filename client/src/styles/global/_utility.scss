@@ -209,3 +209,10 @@
         }
     }
 }
+
+// display
+.d {
+    &-inline-block {
+        display: inline-block !important;
+    }
+}
