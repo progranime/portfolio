@@ -107,6 +107,7 @@
         width: 100%;
         padding: 10px 0px;
         margin: 0;
+        background-color: darken($color: $navbar-primary, $amount: 10%);
 
         li {
             display: inline;

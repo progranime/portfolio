@@ -3,7 +3,12 @@ import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
 
 import { getPortfolio } from '../../../actions/portfolioActions'
-import { CardPortfolio, Spinner, FloatAction } from '../../../components'
+import {
+    CardPortfolio,
+    Spinner,
+    FloatAction,
+    ScrollTo
+} from '../../../components'
 import FloatActionWrapper from '../../../components/FloatAction/Wrapper'
 
 class Index extends Component {
@@ -35,7 +40,7 @@ class Index extends Component {
         const { portfolio } = this.props
 
         return (
-            <div>
+            <ScrollTo>
                 {Object.keys(portfolio.result).length !== 0 ? (
                     this.renderCardPortfolio()
                 ) : (
@@ -54,7 +59,7 @@ class Index extends Component {
                         </Link>
                     </FloatAction>
                 </FloatActionWrapper>
-            </div>
+            </ScrollTo>
         )
     }
 }

@@ -6904,7 +6904,8 @@ textarea.materialize-textarea {
     left: 0;
     width: 100%;
     padding: 10px 0px;
-    margin: 0; }
+    margin: 0;
+    background-color: #212832; }
     .navbar__social li {
       display: inline; }
       .navbar__social li:first-child {

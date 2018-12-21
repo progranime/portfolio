@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 
 import { getPortfolios } from '../../../actions/portfolioActions'
-import { CardPortfolio, Spinner } from '../../../components'
+import { CardPortfolio, Spinner, ScrollTo } from '../../../components'
 import CardPortfolioWrapper from '../../../components/Card/Portfolio/Wrapper'
 
 class Index extends Component {
@@ -35,13 +35,13 @@ class Index extends Component {
         const { portfolio } = this.props
 
         return (
-            <div>
+            <ScrollTo>
                 {portfolio.results.length ? (
                     this.renderCardPortfolio()
                 ) : (
                     <Spinner size="md" />
                 )}
-            </div>
+            </ScrollTo>
         )
     }
 }
