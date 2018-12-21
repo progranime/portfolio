@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import classnames from 'classnames'
 
-const Index = ({ size }) => {
+const Index = ({ size, text }) => {
     return (
         <div className="center-align">
             <img
@@ -16,16 +16,19 @@ const Index = ({ size }) => {
                     'spinner--xl': size === 'xl'
                 })}
             />
+            {text}
         </div>
     )
 }
 
 Index.propTypes = {
-    size: PropTypes.string
+    size: PropTypes.string,
+    text: PropTypes.string
 }
 
 Index.defaultProps = {
-    size: 'xs'
+    size: 'xs',
+    text: ''
 }
 
 export default Index
