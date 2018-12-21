@@ -15,6 +15,10 @@ const Resume = lazy(() => import('./routes/Resume'))
 const Contact = lazy(() => import('./routes/Contact'))
 
 class App extends Component {
+    componentDidMount() {
+        window.document.title = `Jeremy's Portfolio - Home`
+    }
+
     render() {
         return (
             <Provider store={store}>
