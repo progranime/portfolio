@@ -6805,6 +6805,20 @@ textarea.materialize-textarea {
   .main-container--fluid {
     padding: 0; }
 
+.float-action:not(:last-child) {
+  margin-bottom: 15px; }
+
+.float-action__wrapper {
+  position: fixed;
+  right: 1%;
+  bottom: 5%; }
+  .float-action__wrapper--left {
+    right: auto;
+    left: calc(70px + $spacing); }
+    @media only screen and (min-width: 601px) {
+      .float-action__wrapper--left {
+        left: calc(200px - $spacing); } }
+
 .list--style li {
   list-style-type: disc !important;
   margin-left: 15px; }

@@ -1,0 +1,23 @@
+.float-action {
+    &:not(:last-child) {
+        margin-bottom: 15px;
+    }
+
+    &__container {
+    }
+
+    &__wrapper {
+        position: fixed;
+        right: 1%;
+        bottom: 5%;
+
+        &--left {
+            right: auto;
+            left: calc(70px + $spacing);
+
+            @media #{$medium-and-up} {
+                left: calc(200px - $spacing);
+            }
+        }
+    }
+}
