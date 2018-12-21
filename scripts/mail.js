@@ -28,7 +28,7 @@ const main = {
             // setup email data with unicode symbols
             let mailOptions = {
                 from: `Portfolio Email:<${req.email}>`, // sender address
-                to: `${account.user}`, // list of receivers
+                to: `${account.receiver}`, // list of receivers
                 subject: 'Portfolio Inquiries', // Subject line
                 html: html // html body
             }
