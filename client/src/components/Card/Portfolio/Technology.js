@@ -8,7 +8,9 @@ const Technology = ({ technology }) => {
             <ul className="card-portfolio__technology">
                 {technology.map((result, index) => (
                     <li key={index}>
-                        <span className="new badge">{result}</span>
+                        <span className="new badge deep-orange lighten-1">
+                            {result}
+                        </span>
                     </li>
                 ))}
             </ul>

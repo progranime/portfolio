@@ -1,12 +1,17 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const Wrapper = ({ children }) => {
-    return <div className="float-action__wrapper">{children}</div>
+const Wrapper = ({ children, classes }) => {
+    return <div className={`float-action__wrapper ${classes}`}>{children}</div>
+}
+
+Wrapper.defaultProps = {
+    classes: ''
 }
 
 Wrapper.propTypes = {
-    children: PropTypes.node.isRequired
+    children: PropTypes.node.isRequired,
+    classes: PropTypes.string
 }
 
 export default Wrapper
