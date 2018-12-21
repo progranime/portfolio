@@ -40,11 +40,17 @@
         }
 
         .title {
-            font-size: 38px;
+            font-size: 28px;
+            @media #{$medium-and-up} {
+                font-size: 38px;
+            }
         }
 
         .description {
-            font-size: 20px;
+            font-size: 16px;
+            @media #{$medium-and-up} {
+                font-size: 20px;
+            }
         }
     }
 }

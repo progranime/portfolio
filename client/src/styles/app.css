@@ -6744,9 +6744,15 @@ textarea.materialize-textarea {
     .banner__details .description {
       margin: 0; }
     .banner__details .title {
-      font-size: 38px; }
+      font-size: 28px; }
+      @media only screen and (min-width: 601px) {
+        .banner__details .title {
+          font-size: 38px; } }
     .banner__details .description {
-      font-size: 20px; }
+      font-size: 16px; }
+      @media only screen and (min-width: 601px) {
+        .banner__details .description {
+          font-size: 20px; } }
 
 .card-portfolio {
   padding: 15px 0;
@@ -6897,7 +6903,6 @@ textarea.materialize-textarea {
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: #26a69a;
     padding: 10px 0px;
     margin: 0; }
     .navbar__social li {
