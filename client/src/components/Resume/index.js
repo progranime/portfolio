@@ -69,15 +69,21 @@ const Index = () => {
                             <li>
                                 <strong>Linkedin Account:</strong>
                                 <p>
-                                    <a href="https://www.linkedin.com/in/jeremy-espinosa213236119/">
-                                        https://www.linkedin.com/in/jeremy-espinosa213236119/
+                                    <a
+                                        href="https://www.linkedin.com/in/jeremy-espinosa-213236119/"
+                                        target="_blank"
+                                    >
+                                        https://www.linkedin.com/in/jeremy-espinosa-213236119/
                                     </a>
                                 </p>
                             </li>
                             <li>
                                 <strong>Portfolio:</strong>
                                 <p>
-                                    <a href="https://jeremyespinosa.herokuapp.com/">
+                                    <a
+                                        href="https://jeremyespinosa.herokuapp.com/"
+                                        target="_blank"
+                                    >
                                         https://jeremyespinosa.herokuapp.com/
                                     </a>
                                 </p>
