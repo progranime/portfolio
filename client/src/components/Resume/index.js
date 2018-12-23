@@ -77,8 +77,8 @@ const Index = () => {
                             <li>
                                 <strong>Portfolio:</strong>
                                 <p>
-                                    <a href="http://jle-portfolio.herokuapp.com/">
-                                        http://jle-portfolio.herokuapp.com/
+                                    <a href="https://jeremyespinosa.herokuapp.com/">
+                                        https://jeremyespinosa.herokuapp.com/
                                     </a>
                                 </p>
                             </li>
@@ -113,20 +113,20 @@ const Index = () => {
                                 coding
                             </li>
                             <li>
-                                Provided support to current websites to enhance
-                                and clean up code for better performance.
+                                Provides support to current websites to enhance
+                                and clean up code for better performance
                             </li>
                             <li>
-                                Handling Data which focuses in downloads,
+                                Handles Data which focuses in downloads,
                                 software and documents of the website requested
                                 by stakeholders
                             </li>
                             <li>
-                                Created Automation Project to avoid repetitive
+                                Creates Automation Project to avoid repetitive
                                 task of the company
                             </li>
                             <li>
-                                Following Mobile First Design and Modular coding
+                                Follows Mobile First Design and Modular coding
                                 to have better structure of coding
                             </li>
                         </ul>
@@ -147,16 +147,17 @@ const Index = () => {
                         <hr />
                         <ul className="list list--style">
                             <li>
-                                Ensures and maintained websites are properly
-                                working on a daily basis.
+                                Was responsible for ensuring and maintaining
+                                that websites are properly working on a daily
+                                basis
                             </li>
                             <li>
-                                Creating responsive websites for better usage in
-                                mobile devices
+                                Was responsible for creating responsive websites
+                                for better usage in mobile devices
                             </li>
                             <li>
-                                Utilize Chinese CMS software in creating
-                                websites.
+                                Was also responsible for utilizing Chinese CMS
+                                software in creating websites
                             </li>
                         </ul>
                     </div>
@@ -184,16 +185,16 @@ const Index = () => {
                             <li>Automating the creation of the avatar</li>
                             <li>
                                 Creating Avatar based on gender, position you
-                                want.
+                                want
                             </li>
                             <li>
                                 Customizing avatar you've chosen from top to
-                                bottom of body parts.
+                                bottom of body parts
                             </li>
                             <li>Storing of avatar you've created</li>
                             <li>
                                 Searching Functionality for the other user to
-                                see your created avatar.
+                                see your created avatar
                             </li>
                         </ul>
 
@@ -212,14 +213,13 @@ const Index = () => {
                             </li>
                             <li>
                                 CRUD (Create, Read, Update, Delete)
-                                functionality.
+                                functionality
                             </li>
                             <li>
                                 CRUD functionality will depends on its user role
                             </li>
-                            <li>Converting the job description to PDF file</li>
-                            <li>Exporting of data to CSV file.</li>
-                            <li>Tracking user action to the application</li>
+                            <li>Exporting of data to CSV file</li>
+                            <li>Tracing kuser action to the application</li>
                         </ul>
 
                         <h6>
@@ -236,19 +236,16 @@ const Index = () => {
                         <ul className="list list--style">
                             <li>Supporting current and old website</li>
                             <li>
-                                Improved coding structure using Modular Pattern
-                                Design.
-                            </li>
-                            <li>
-                                CRUD functionality will depends on its user role
+                                Improving coding structure using Modular Pattern
+                                Design
                             </li>
                             <li>
                                 Handling data request to updates the downloads,
-                                software and documents of the product.
+                                software and documents of the product
                             </li>
                             <li>
                                 Creating new prototype of the current website
-                                for better experience for the user.
+                                for better experience for the user
                             </li>
                         </ul>
                     </div>
@@ -273,9 +270,7 @@ const Index = () => {
                                 company offers
                             </li>
                             <li>Used Google Maps API</li>
-                            <li>
-                                Created contact form to know users concerns.
-                            </li>
+                            <li>Created contact form to know users concerns</li>
                         </ul>
                     </div>
                 </div>
@@ -299,12 +294,13 @@ const Index = () => {
                                 application
                             </li>
                             <li>
-                                Acquired data from the Police station of the
-                                target location of this app
+                                Assigned to acquire data from the Police station
+                                of the target location of this app
                             </li>
                             <li>
-                                Utilized the Google Maps API to provide the
-                                functionality needed by the application
+                                Assigned to utilize the Google Maps API to
+                                provide the functionality needed by the
+                                application
                             </li>
                         </ul>
                     </div>
@@ -326,7 +322,8 @@ const Index = () => {
                                 Javascript (Modular Pattern Design), jQuery,
                                 AJAX, Reactjs
                             </li>
-                            <li>Handlebar Template ● PHP, MySQL</li>
+                            <li>Handlebar Template</li>
+                            <li>PHP, MySQL</li>
                             <li>MVC Framework CodeIgniter</li>
                             <li>WordPress</li>
                             <li>Java, Hybris</li>

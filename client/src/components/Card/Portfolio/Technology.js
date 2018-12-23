@@ -4,7 +4,9 @@ import PropTypes from 'prop-types'
 const Technology = ({ technology }) => {
     return (
         <Fragment>
-            <p>Technologies Used:</p>
+            <p>
+                <strong>Technologies Used:</strong>
+            </p>
             <ul className="card-portfolio__technology">
                 {technology.map((result, index) => (
                     <li key={index}>
