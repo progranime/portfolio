@@ -6823,10 +6823,10 @@ textarea.materialize-textarea {
   bottom: 5%; }
   .float-action__wrapper--left {
     right: auto;
-    left: calc(70px + $spacing); }
+    left: 85px; }
     @media only screen and (min-width: 601px) {
       .float-action__wrapper--left {
-        left: calc(200px - $spacing); } }
+        left: 215px; } }
 
 .list--style li {
   list-style-type: disc !important;

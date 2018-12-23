@@ -13,10 +13,10 @@
 
         &--left {
             right: auto;
-            left: calc(70px + $spacing);
+            left: 85px;
 
             @media #{$medium-and-up} {
-                left: calc(200px - $spacing);
+                left: 215px;
             }
         }
     }
