@@ -1,10 +1,22 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import ProgressiveImage from 'react-progressive-image-loading'
 
 const ImageHolder = ({ url, classes }) => {
     return (
         <div className={`card-portfolio__image-holder ${classes}`}>
-            <img src={url} alt="" className="responsive-img" />
+            <ProgressiveImage
+                preview={url}
+                src={url}
+                render={(src, style) => (
+                    <img
+                        src={src}
+                        alt=""
+                        style={style}
+                        className="responsive-img"
+                    />
+                )}
+            />
         </div>
     )
 }
