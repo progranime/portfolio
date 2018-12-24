@@ -77,6 +77,7 @@ class Index extends Component {
                             placeholder="Jeremy Espinosa"
                             value={this.state.name}
                             onChange={this.handleChange}
+                            required={true}
                         />
                         <FormInput
                             label="Email"
@@ -86,6 +87,7 @@ class Index extends Component {
                             placeholder="sample@gmail.com"
                             value={this.state.email}
                             onChange={this.handleChange}
+                            required={true}
                         />
                         <FormTextarea
                             label="Message"
@@ -95,6 +97,7 @@ class Index extends Component {
                             rows={5}
                             value={this.state.message}
                             onChange={this.handleChange}
+                            required={true}
                         />
                         <div className="right-align">
                             <button

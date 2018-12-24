@@ -1,7 +1,16 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const Index = ({ label, id, name, placeholder, rows, value, onChange }) => {
+const Index = ({
+    label,
+    id,
+    name,
+    placeholder,
+    rows,
+    value,
+    required,
+    onChange
+}) => {
     return (
         <div className="input-field">
             <textarea
@@ -12,6 +21,7 @@ const Index = ({ label, id, name, placeholder, rows, value, onChange }) => {
                 className="materialize-textarea"
                 value={value}
                 onChange={onChange}
+                required={required}
             />
             {label && (
                 <label htmlFor={id} className="active">
@@ -22,6 +32,10 @@ const Index = ({ label, id, name, placeholder, rows, value, onChange }) => {
     )
 }
 
+Index.defaultProps = {
+    required: false
+}
+
 Index.propTypes = {
     label: PropTypes.string,
     id: PropTypes.string,
@@ -29,6 +43,7 @@ Index.propTypes = {
     placeholder: PropTypes.string,
     rows: PropTypes.number,
     value: PropTypes.string,
+    required: PropTypes.bool,
     onChange: PropTypes.func.isRequired
 }
 

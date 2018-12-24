@@ -72,6 +72,7 @@ const Index = () => {
                                     <a
                                         href="https://www.linkedin.com/in/jeremy-espinosa-213236119/"
                                         target="_blank"
+                                        rel="noopener noreferrer"
                                     >
                                         https://www.linkedin.com/in/jeremy-espinosa-213236119/
                                     </a>
@@ -83,6 +84,7 @@ const Index = () => {
                                     <a
                                         href="https://jeremyespinosa.herokuapp.com/"
                                         target="_blank"
+                                        rel="noopener noreferrer"
                                     >
                                         https://jeremyespinosa.herokuapp.com/
                                     </a>

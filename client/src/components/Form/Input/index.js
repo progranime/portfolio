@@ -1,7 +1,16 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const Index = ({ label, id, name, type, placeholder, value, onChange }) => {
+const Index = ({
+    label,
+    id,
+    name,
+    type,
+    placeholder,
+    value,
+    required,
+    onChange
+}) => {
     return (
         <div className="input-field">
             <input
@@ -12,6 +21,7 @@ const Index = ({ label, id, name, type, placeholder, value, onChange }) => {
                 value={value}
                 onChange={onChange}
                 className="validate"
+                required={required}
             />
             {label && (
                 <label htmlFor={id} className="active">
@@ -22,6 +32,10 @@ const Index = ({ label, id, name, type, placeholder, value, onChange }) => {
     )
 }
 
+Index.defaultProps = {
+    required: false
+}
+
 Index.propTypes = {
     label: PropTypes.string,
     id: PropTypes.string,
@@ -29,6 +43,7 @@ Index.propTypes = {
     type: PropTypes.string,
     placeholder: PropTypes.string,
     value: PropTypes.string,
+    required: PropTypes.bool,
     onChange: PropTypes.func.isRequired
 }
 
