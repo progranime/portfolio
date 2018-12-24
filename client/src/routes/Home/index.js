@@ -9,7 +9,17 @@ class Index extends Component {
     render() {
         return (
             <div className="main-container main-container--fluid">
-                <Banner />
+                <Banner
+                    backgroundSrc={`${
+                        window.location.origin
+                    }/images/assets/workplace.jpg`}
+                    title="Hi, I'm Jeremy Espinosa"
+                    description="Front End Developer with more than a year of experience, <br /> 
+                    and also experience in Back End Technologies 
+                    specialize in PHP and NodeJS."
+                    link="/portfolio"
+                    linkText="See My Portfolio"
+                />
             </div>
         )
     }

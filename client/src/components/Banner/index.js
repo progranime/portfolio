@@ -3,7 +3,9 @@ import PropTypes from 'prop-types'
 import classnames from 'classnames'
 import { Link } from 'react-router-dom'
 
-const Index = ({ size }) => {
+const Index = ({ size, backgroundSrc, title, description, link, linkText }) => {
+    let descriptionMarkup = { __html: description }
+
     return (
         <div
             className={classnames('banner', {
@@ -14,27 +16,25 @@ const Index = ({ size }) => {
                 <div
                     className="banner__image-holder"
                     style={{
-                        backgroundImage: `url(${
-                            window.location.origin
-                        }/images/assets/workplace.jpg)`
+                        backgroundImage: `url(${backgroundSrc})`
                     }}
                 />
                 <div className="banner__overlay" />
                 <div className="banner__details">
-                    <p className="title">Hi, I'm Jeremy Espinosa</p>
-                    <p className="description">
-                        Front End Developer with more than a year of experience,{' '}
-                        <br />
-                        and also experience in Back End Technologies specialize
-                        in PHP and NodeJS.
-                    </p>
+                    {title && <p className="title">{title}</p>}
+                    {description && (
+                        <p
+                            className="description"
+                            dangerouslySetInnerHTML={descriptionMarkup}
+                        />
+                    )}
 
                     <div className="my-5">
                         <Link
-                            to="/portfolio"
+                            to={link}
                             className="btn waves-effect waves-light"
                         >
-                            See My Portfolio
+                            {linkText}
                         </Link>
                     </div>
                 </div>
@@ -44,11 +44,21 @@ const Index = ({ size }) => {
 }
 
 Index.defaultProps = {
-    size: 'fullscreen'
+    size: 'fullscreen',
+    backgroundSrc: '',
+    title: '',
+    description: '',
+    link: '',
+    linkText: ''
 }
 
 Index.propTypes = {
-    size: PropTypes.string
+    size: PropTypes.string,
+    backgroundSrc: PropTypes.string,
+    title: PropTypes.string,
+    description: PropTypes.string,
+    link: PropTypes.string,
+    linkText: PropTypes.string
 }
 
 export default Index

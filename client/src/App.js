@@ -13,6 +13,7 @@ const Portfolio = lazy(() => import('./routes/Portfolio'))
 const PortfolioView = lazy(() => import('./routes/Portfolio/View'))
 const Resume = lazy(() => import('./routes/Resume'))
 const Contact = lazy(() => import('./routes/Contact'))
+const NotFound = lazy(() => import('./routes/NotFound'))
 
 class App extends Component {
     componentDidMount() {
@@ -24,10 +25,9 @@ class App extends Component {
             <Provider store={store}>
                 <div className="App">
                     <Router>
-                        <Switch>
-                            <Suspense fallback={<Spinner />}>
-                                <Navbar />
-
+                        <Suspense fallback={<Spinner />}>
+                            <Navbar />
+                            <Switch>
                                 <Route
                                     exact
                                     path="/"
@@ -58,8 +58,12 @@ class App extends Component {
                                     path="/contact"
                                     component={props => <Contact {...props} />}
                                 />
-                            </Suspense>
-                        </Switch>
+
+                                <Route
+                                    component={props => <NotFound {...props} />}
+                                />
+                            </Switch>
+                        </Suspense>
                     </Router>
                 </div>
             </Provider>
