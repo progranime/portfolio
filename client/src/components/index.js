@@ -1,6 +1,7 @@
 export { default as Banner } from './Banner'
 export { default as Navbar } from './Navbar'
 export { default as FloatAction } from './FloatAction'
+export { default as CardFab } from './Card/Fab'
 export { default as CardPortfolio } from './Card/Portfolio'
 export { default as Form } from './Form'
 export { default as FormInput } from './Form/Input'
