@@ -17,7 +17,8 @@ const Index = ({
     task,
     gallery,
     showGallery,
-    showSeeMore
+    showSeeMore,
+    handleLightbox
 }) => {
     return (
         <Fragment>
@@ -57,8 +58,10 @@ const Index = ({
                         {gallery.map((result, index) => (
                             <CardPortfolioImageHolder
                                 key={index}
+                                index={index}
                                 url={`${window.location.origin}${result}`}
                                 classes="card-portfolio__image-holder--fullview"
+                                handleLightbox={handleLightbox}
                             />
                         ))}
                     </CardPortfolioContainer>

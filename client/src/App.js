@@ -5,6 +5,7 @@ import { Provider } from 'react-redux'
 import store from './store'
 // styles
 import './styles/app.css'
+import 'react-image-lightbox/style.css'
 // components
 import { Spinner, Navbar } from './components'
 // routes

@@ -6796,7 +6796,8 @@ body {
     .card-portfolio__technology .badge:after {
       content: '' !important; }
   .card-portfolio__image-holder {
-    margin-bottom: 15px; }
+    margin-bottom: 15px;
+    cursor: pointer; }
     .card-portfolio__image-holder--fullview {
       margin: 2px;
       display: inline-block;
