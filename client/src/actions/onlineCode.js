@@ -9,7 +9,6 @@ export const getOnlineCodes = () => dispatch => {
     }
 
     axios(axiosOptions).then(res => {
-        console.log(res.data)
         dispatch({
             type: GET_ONLINE_CODES,
             payload: {
