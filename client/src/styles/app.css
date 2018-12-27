@@ -6813,15 +6813,14 @@ body {
 
 .card-fab {
   flex-grow: 1;
-  flex: 1 1 calc(100%); }
+  flex: 1 1 calc(100%);
+  margin: 3px; }
   @media only screen and (min-width: 601px) {
     .card-fab {
-      flex: 1 1 calc(100% / 2 - 10px);
-      margin: 5px; } }
+      flex: 1 1 calc(100% / 2 - 6px); } }
   @media only screen and (min-width: 993px) {
     .card-fab {
-      flex: 1 1 calc(100% / 3 - 15px);
-      margin: 5px; } }
+      flex: 1 1 calc(100% / 3 - 9px); } }
   .card-fab__wrapper {
     display: flex;
     flex-wrap: wrap; }
