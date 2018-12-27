@@ -6,6 +6,7 @@ const app = express()
 
 const portfolio = require('./routes/api/portfolio')
 const mail = require('./routes/api/mail')
+const onlineCode = require('./routes/api/onlineCode')
 
 // DB Config
 const db = require('./config/keys').mongoURI
@@ -26,6 +27,7 @@ app.use(bodyParser.json())
 // routes
 app.use('/api/portfolio', portfolio)
 app.use('/api/mail', mail)
+app.use('/api/onlineCode', onlineCode)
 
 // Serve static assets if in production
 if (process.env.NODE_ENV === 'production') {

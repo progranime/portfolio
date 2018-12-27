@@ -12,9 +12,9 @@ const List = () => {
                 <i className="tiny material-icons">collections</i>
                 <span className="title">Portfolio</span>
             </NavLink>
-            <NavLink exact to="/code-editor" className="navbar__list-item">
+            <NavLink exact to="/online-code" className="navbar__list-item">
                 <i className="tiny material-icons">code</i>
-                <span className="title">Code Editor</span>
+                <span className="title">Online Code</span>
             </NavLink>
             <NavLink exact to="/resume" className="navbar__list-item">
                 <i className="tiny material-icons">assessment</i>

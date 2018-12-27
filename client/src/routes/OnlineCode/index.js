@@ -1,13 +1,12 @@
 import React, { Component } from 'react'
 
-import { CardFab } from '../../components'
+import OnlineCode from '../../containers/OnlineCode'
 
 export class Index extends Component {
     render() {
         return (
-            <div>
-                Code Editor container
-                <CardFab />
+            <div className="main-container">
+                <OnlineCode />
             </div>
         )
     }

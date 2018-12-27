@@ -11,7 +11,7 @@ import { Spinner, Navbar } from './components'
 // routes
 const Home = lazy(() => import('./routes/Home'))
 const Portfolio = lazy(() => import('./routes/Portfolio'))
-const CodeEditor = lazy(() => import('./routes/CodeEditor'))
+const OnlineCode = lazy(() => import('./routes/OnlineCode'))
 const PortfolioView = lazy(() => import('./routes/Portfolio/View'))
 const Resume = lazy(() => import('./routes/Resume'))
 const Contact = lazy(() => import('./routes/Contact'))
@@ -53,9 +53,9 @@ class App extends Component {
 
                                 <Route
                                     exact
-                                    path="/code-editor"
+                                    path="/online-code"
                                     component={props => (
-                                        <CodeEditor {...props} />
+                                        <OnlineCode {...props} />
                                     )}
                                 />
                                 <Route
