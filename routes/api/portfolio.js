@@ -20,4 +20,19 @@ router.get('/:id', async (req, res) => {
     return res.json(results[0])
 })
 
+// @route   GET api/portfolio/page/:number
+// @desc    Get portfolio base on page number
+// @access  Public
+router.get('/page/:page', async (req, res) => {
+    const page = req.params.page
+    const limit = 4
+    const start = (page - 1) * limit
+
+    const results = await Portfolio.find()
+        .skip(start)
+        .limit(limit)
+
+    return res.json(results)
+})
+
 module.exports = router

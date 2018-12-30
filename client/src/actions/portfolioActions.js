@@ -1,6 +1,12 @@
 import axios from 'axios'
 
-import { GET_PORTFOLIOS, GET_PORTFOLIO } from './types'
+import store from '../store'
+import {
+    GET_PORTFOLIOS,
+    GET_PORTFOLIO,
+    GET_MORE_PORTFOLIOS,
+    RESET_PORTFOLIOS
+} from './types'
 
 export const getPortfolios = () => dispatch => {
     const axiosOptions = {
@@ -31,5 +37,35 @@ export const getPortfolio = payload => dispatch => {
                 result: res.data
             }
         })
+    })
+}
+
+export const getMorePortfolios = payload => dispatch => {
+    const page = payload.page
+
+    const axiosOptions = {
+        method: 'get',
+        url: `/api/portfolio/page/${page}`
+    }
+
+    axios(axiosOptions).then(res => {
+        // concat the previous data
+        let results = store.getState().portfolio.results.concat(res.data)
+
+        dispatch({
+            type: GET_MORE_PORTFOLIOS,
+            payload: {
+                results
+            }
+        })
+    })
+}
+
+export const resetPortfolios = payload => dispatch => {
+    dispatch({
+        type: RESET_PORTFOLIOS,
+        payload: {
+            results: []
+        }
     })
 }

@@ -1,13 +1,42 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
+import BottomScrollListener from 'react-bottom-scroll-listener'
 
-import { getPortfolios } from '../../../actions/portfolioActions'
+import {
+    getPortfolios,
+    getMorePortfolios,
+    resetPortfolios
+} from '../../../actions/portfolioActions'
 import { CardPortfolio, Spinner, ScrollTo } from '../../../components'
 import CardPortfolioWrapper from '../../../components/Card/Portfolio/Wrapper'
 
 class Index extends Component {
+    constructor(props) {
+        super(props)
+
+        this.state = {
+            page: 1
+        }
+    }
+
     componentDidMount() {
-        this.props.getPortfolios()
+        this.props.getMorePortfolios({
+            page: this.state.page
+        })
+    }
+
+    handleGetMorePortfolios = () => {
+        this.setState(
+            {
+                page: this.state.page + 1
+            },
+            () => {
+                this.props.getMorePortfolios({
+                    page: this.state.page
+                })
+            }
+        )
     }
 
     renderCardPortfolio() {
@@ -31,19 +60,32 @@ class Index extends Component {
         return <CardPortfolioWrapper>{portfolios}</CardPortfolioWrapper>
     }
 
+    componentWillUnmount() {
+        this.props.resetPortfolios()
+    }
+
     render() {
         const { portfolio } = this.props
 
         return (
-            <ScrollTo>
-                {portfolio.results.length ? (
-                    this.renderCardPortfolio()
-                ) : (
-                    <Spinner size="md" />
-                )}
-            </ScrollTo>
+            <BottomScrollListener onBottom={this.handleGetMorePortfolios}>
+                <ScrollTo>
+                    {portfolio.results.length ? (
+                        this.renderCardPortfolio()
+                    ) : (
+                        <Spinner size="md" />
+                    )}
+                </ScrollTo>
+            </BottomScrollListener>
         )
     }
+}
+
+Index.propTypes = {
+    portfolio: PropTypes.object.isRequired,
+    getPortfolios: PropTypes.func.isRequired,
+    getMorePortfolios: PropTypes.func.isRequired,
+    resetPortfolios: PropTypes.func.isRequired
 }
 
 const mapStateToProps = state => ({
@@ -51,7 +93,9 @@ const mapStateToProps = state => ({
 })
 
 const mapDispatchToProps = {
-    getPortfolios
+    getPortfolios,
+    getMorePortfolios,
+    resetPortfolios
 }
 
 export default connect(
