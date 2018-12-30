@@ -6966,9 +6966,7 @@ body {
 
 .spinner {
   display: block;
-  text-align: center;
-  position: relative;
-  z-index: 5; }
+  text-align: center; }
   .spinner--xs {
     width: 25px; }
   .spinner--sm {
