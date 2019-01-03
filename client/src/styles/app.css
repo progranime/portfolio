@@ -6809,15 +6809,15 @@ body {
     margin-bottom: 15px;
     cursor: pointer; }
     .card-portfolio__image-holder--fullview {
-      margin: 2px;
+      margin: 5px;
       display: inline-block;
       width: 100%; }
       @media only screen and (min-width: 601px) {
         .card-portfolio__image-holder--fullview {
-          width: calc(50% - 4px); } }
+          width: calc(50% - 10px); } }
       @media only screen and (min-width: 993px) {
         .card-portfolio__image-holder--fullview {
-          width: calc(33.33% - 6px); } }
+          width: calc(33.33% - 15px); } }
     .card-portfolio__image-holder img {
       box-shadow: 3px 5px 3px #ddd; }
 
@@ -6838,9 +6838,9 @@ body {
     font-size: 18px;
     border-bottom: 1px solid #ccc; }
   .card-fab .card-image {
-    background-size: 100%;
+    background-size: cover;
     width: 100%;
-    height: 150px;
+    height: 250px;
     background-position: top center;
     background-repeat: no-repeat; }
 
