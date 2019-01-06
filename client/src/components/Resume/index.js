@@ -25,9 +25,10 @@ const Index = () => {
                             Experienced Web Developer seeking opportunity to
                             bring knowledge of programming. And a self-motivated
                             IT professional with huge knowledge and proficiency
-                            in HTML, CSS, JavaScript, PHP and mobile responsive
-                            web development, as well as strong skills and
-                            ability in writing clean and efficient code.
+                            in HTML, CSS, JavaScript, JQuery, Reactjs, Nodejs,
+                            PHP and mobile responsive web development, as well
+                            as strong skills and ability in writing clean and
+                            efficient code.
                         </p>
                     </div>
                 </div>
@@ -181,81 +182,149 @@ const Index = () => {
                         <strong>MUSIC Tribe </strong>
                     </div>
                     <div className="col s12 m9">
-                        <h6>
-                            <strong>Avatar Maker</strong>
-                        </h6>
-                        <p>
-                            <i>Front & Back End Developer</i>
-                        </p>
-                        <hr />
+                        <div>
+                            <h6>
+                                <strong>Business Card Generator</strong>
+                            </h6>
+                            <p>
+                                <i>Front & Back End Developer</i>
+                            </p>
+                            <hr />
 
-                        <ul className="list list--style">
-                            <li>Automating the creation of the avatar</li>
-                            <li>
-                                Creating Avatar based on gender, position you
-                                want
-                            </li>
-                            <li>
-                                Customizing avatar you've chosen from top to
-                                bottom of body parts
-                            </li>
-                            <li>Storing of avatar you've created</li>
-                            <li>
-                                Searching Functionality for the other user to
-                                see your created avatar
-                            </li>
-                        </ul>
+                            <ul className="list list--style">
+                                <li>
+                                    Automates the creation of Business Card of
+                                    employees
+                                </li>
+                                <li>
+                                    CRUD (Create, Read, Update, Delete)
+                                    functionality of the system
+                                </li>
+                                <li>
+                                    Sending email to the admin for approving the
+                                    created Business Card
+                                </li>
+                                <li>
+                                    Admin dashboard for updating the status of
+                                    those Business Card created
+                                </li>
+                                <li>
+                                    Manage users who can access with admin
+                                    rights
+                                </li>
+                            </ul>
+                        </div>
 
-                        <h6>
-                            <strong>Job Description / Pledge</strong>
-                        </h6>
-                        <p>
-                            <i>Front & Back End Developer</i>
-                        </p>
-                        <hr />
+                        <div>
+                            <h6>
+                                <strong>Digital Assets Management</strong>
+                            </h6>
+                            <p>
+                                <i>Front & Back End Developer</i>
+                            </p>
+                            <hr />
 
-                        <ul className="list list--style">
-                            <li>
-                                Automating job description of the company’s
-                                employee
-                            </li>
-                            <li>
-                                CRUD (Create, Read, Update, Delete)
-                                functionality
-                            </li>
-                            <li>
-                                CRUD functionality will depends on its user role
-                            </li>
-                            <li>Exporting of data to CSV file</li>
-                            <li>Tracing kuser action to the application</li>
-                        </ul>
+                            <ul className="list list--style">
+                                <li>Manages digital assets of the company</li>
+                                <li>
+                                    Search through available assets to avoid
+                                    duplication
+                                </li>
+                                <li>
+                                    Adding/Updating tags/keywords of the assets
+                                    to search easily
+                                </li>
+                                <li>Favorites assets to have collection</li>
+                                <li>
+                                    Can group download assets and compress it in
+                                    a zip file
+                                </li>
+                            </ul>
+                        </div>
 
-                        <h6>
-                            <strong>
-                                Tannoy, TC Electronic, TC Helicon, Lab Gruppen,
-                                Behringer, Midas Website
-                            </strong>
-                        </h6>
-                        <p>
-                            <i>Front End Developer</i>
-                        </p>
-                        <hr />
+                        <div>
+                            <h6>
+                                <strong>Avatar Maker</strong>
+                            </h6>
+                            <p>
+                                <i>Front & Back End Developer</i>
+                            </p>
+                            <hr />
 
-                        <ul className="list list--style">
-                            <li>Supporting current and old website</li>
-                            <li>
-                                Improving coding structure using Modular Pattern
-                                Design
-                            </li>
-                            <li>
-                                Handling data request to updates the downloads,
-                                software and documents of the product
-                            </li>
-                            <li>
-                                Creating new prototype of the current website
-                                for better experience for the user
-                            </li>
-                        </ul>
+                            <ul className="list list--style">
+                                <li>Automating the creation of the avatar</li>
+                                <li>
+                                    Creating Avatar based on gender, position
+                                    you want
+                                </li>
+                                <li>
+                                    Customizing avatar you've chosen from top to
+                                    bottom of body parts
+                                </li>
+                                <li>Storing of avatar you've created</li>
+                                <li>
+                                    Searching Functionality for the other user
+                                    to see your created avatar
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h6>
+                                <strong>Job Description / Pledge</strong>
+                            </h6>
+                            <p>
+                                <i>Front & Back End Developer</i>
+                            </p>
+                            <hr />
+
+                            <ul className="list list--style">
+                                <li>
+                                    Automating job description of the company’s
+                                    employee
+                                </li>
+                                <li>
+                                    CRUD (Create, Read, Update, Delete)
+                                    functionality
+                                </li>
+                                <li>
+                                    CRUD functionality will depends on its user
+                                    role
+                                </li>
+                                <li>Exporting of data to CSV file</li>
+                                <li>Tracing kuser action to the application</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h6>
+                                <strong>
+                                    Tannoy, TC Electronic, TC Helicon, Lab
+                                    Gruppen, Behringer, Midas Website
+                                </strong>
+                            </h6>
+                            <p>
+                                <i>Front End Developer</i>
+                            </p>
+                            <hr />
+
+                            <ul className="list list--style">
+                                <li>Supporting current and old website</li>
+                                <li>
+                                    Improving coding structure using Modular
+                                    Pattern Design
+                                </li>
+                                <li>
+                                    Handling data request to updates the
+                                    downloads, software and documents of the
+                                    product
+                                </li>
+                                <li>
+                                    Creating new prototype of the current
+                                    website for better experience for the user
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
 
@@ -326,11 +395,13 @@ const Index = () => {
                                 CSS/CSS3 (LESS,SCSS), Mobile First Design, BEM
                                 naming convention
                             </li>
+                            <li>Bootstrap, Materializecss</li>
                             <li>
                                 Javascript (Modular Pattern Design), jQuery,
-                                AJAX, Reactjs
+                                AJAX, ReactJS, Redux
                             </li>
                             <li>Handlebar Template</li>
+                            <li>Nodejs</li>
                             <li>PHP, MySQL</li>
                             <li>MVC Framework CodeIgniter</li>
                             <li>WordPress</li>
