@@ -16,10 +16,10 @@ const List = () => {
                 <i className="tiny material-icons">code</i>
                 <span className="title">Online Code</span>
             </NavLink>
-            <NavLink exact to="/resume" className="navbar__list-item">
+            {/* <NavLink exact to="/resume" className="navbar__list-item">
                 <i className="tiny material-icons">assessment</i>
                 <span className="title">Resume</span>
-            </NavLink>
+            </NavLink> */}
             <NavLink exact to="/contact" className="navbar__list-item">
                 <i className="tiny material-icons">contacts</i>
                 <span className="title">Contact</span>

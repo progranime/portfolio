@@ -61,6 +61,9 @@ class Index extends Component {
                         freelance project in <strong>Web Development</strong>.
                         <br />
                         Please drop your email here.
+                        <br />
+                        You can also request for my <strong>resume</strong> just
+                        state your reasons and I will send it to your email.
                     </p>
 
                     <Form onSubmit={this.handleSubmit}>

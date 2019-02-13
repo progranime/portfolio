@@ -58,11 +58,11 @@ class App extends Component {
                                         <OnlineCode {...props} />
                                     )}
                                 />
-                                <Route
+                                {/* <Route
                                     exact
                                     path="/resume"
                                     component={props => <Resume {...props} />}
-                                />
+                                /> */}
                                 <Route
                                     exact
                                     path="/contact"
