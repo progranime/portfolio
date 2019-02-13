@@ -13,7 +13,7 @@ const Home = lazy(() => import('./routes/Home'))
 const Portfolio = lazy(() => import('./routes/Portfolio'))
 const OnlineCode = lazy(() => import('./routes/OnlineCode'))
 const PortfolioView = lazy(() => import('./routes/Portfolio/View'))
-const Resume = lazy(() => import('./routes/Resume'))
+// const Resume = lazy(() => import('./routes/Resume'))
 const Contact = lazy(() => import('./routes/Contact'))
 const NotFound = lazy(() => import('./routes/NotFound'))
 
