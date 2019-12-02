@@ -1,26 +1,30 @@
 {
-    "name": "portfolio",
-    "version": "1.0.0",
-    "description": "My personal portfolio using MERN technology",
-    "main": "server.js",
-    "scripts": {
-        "server": "nodemon server",
-        "client": "npm start --prefix client",
-        "dev": "concurrently \"npm run server\" \"npm run client\"",
-        "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
-    },
-    "author": "Jeremy Espinosa",
-    "license": "ISC",
-    "dependencies": {
-        "body-parser": "^1.18.3",
-        "concurrently": "^4.1.0",
-        "express": "^4.16.4",
-        "lodash": "^4.17.11",
-        "mongoose": "^5.4.0",
-        "node-mailer": "^0.1.1",
-        "nodemailer": "^4.7.0"
-    },
-    "devDependencies": {
-        "nodemon": "^1.18.9"
-    }
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "My personal portfolio using MERN technology",
+  "main": "server.js",
+  "scripts": {
+    "server": "nodemon server",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "author": "Jeremy Espinosa",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "concurrently": "^4.1.0",
+    "express": "^4.16.4",
+    "lodash": "^4.17.11",
+    "mongoose": "^5.4.0",
+    "node-mailer": "^0.1.1",
+    "nodemailer": "^4.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  },
+  "engines": {
+    "node": "10.16.0",
+    "npm": "6.9.0"
+  }
 }
