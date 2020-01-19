@@ -70,7 +70,7 @@ class Index extends Component {
     return (
       <BottomScrollListener
         onBottom={this.handleGetMorePortfolios}
-        offset="500"
+        offset="150"
       >
         <ScrollTo>
           {portfolio.results.length ? (
