@@ -17,7 +17,7 @@ https://devcenter.heroku.com/articles/git
 #how to commit to the live heroku app
 
 - git add .
-- git push commit -am "your comment"
+- git commit -am "your comment"
 - git push heroku master
 
 #how to rename app
