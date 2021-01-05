@@ -6,7 +6,7 @@
     "@babel/plugin-proposal-class-properties": "^7.2.1",
     "@babel/polyfill": "^7.0.0",
     "autoprefixer": "^9.4.3",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "classnames": "^2.2.6",
     "lodash": "^4.17.11",
     "materialize-css": "^1.0.0",
